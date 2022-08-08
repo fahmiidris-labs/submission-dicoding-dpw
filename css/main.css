@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 16px;
+}
+
+/* content */
+
+#content {
+  flex: 5;
+  padding: 20px 0;
+}
+
+/* navigation */
+
+.nav {
+  background-color: white;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 60px;
+}
+
+.logo {
+  padding-top: 10px;
+}
+
+.img-logo {
+  width: auto;
+  height: 25px;
+  margin-right: 20px;
+}
+
+.nav-list {
+  padding-top: 2px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-item {
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2f353d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.nav-item a {
+  color: #2f353d;
+  text-decoration: none;
+}
+
+/* aside */
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.aside {
+  flex: 2;
+  padding: 20px 0;
+}
+
+.aside-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.aside-container h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2f353d;
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+.aside-container h2 > span {
+  color: #22d3ee;
+}
+
+.aside-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.aside-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2f353d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.aside-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2f353d;
+  margin-bottom: 10px;
+}
+
+.skils,
+.social-media {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill > img,
+.social-media-item > img {
+  width: auto;
+  height: 20px;
+  margin-right: 10px;
+}
+/* footer */
+
+footer {
+  background-color: #334155;
+  border-top: 1px solid #334155;
+  padding: 20px 0;
+  color: #ffffff;
+}
+
+footer > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  line-height: 12px;
+}
+
+.footer-item {
+  display: flex;
+}
+
+.footer-item > a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-item > a:hover {
+  color: #22d3ee;
+  text-decoration: none;
+}
+
+/* content */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-title > img {
+  width: auto;
+  height: 400px;
+  margin-right: 20px;
+}
+
+.hero-title > p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2f353d;
+  text-align: center;
+  line-height: 24px;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+}
+
+#projects > h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2f353d;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.projects-lists,
+.projects-lists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+.card > div {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+
+.card > div > h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2f353d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.card > div > p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2f353d;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-title > img {
+    width: auto;
+    height: 200px;
+  }
+
+  .main-section {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .footer-item {
+    font-size: 10px;
+  }
+}
